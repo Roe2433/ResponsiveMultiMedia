@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: none;
+        }
+
+        @media only screen {
+
+            /* For Desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <h1>Meaning</h1>
+            <nav>
+                <div class="col-3" padding=5.5%><a href="index.html">Home</a> </div>
+                <div class="col-3"><a href="Tradition.html">Tradition</a> </div>
+                <div class="col-3"><a href="season.html">Season</a></div>
+                <div class="col-3" padding=5.5%><a href="meaning.html">Meaning</a></div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div><img src="gifts.jpg" alt="gifts"> </div>
+                <p>Christmas means giving - not just material things, but caring and loving.
+                    Just like the old song says "Give LOVE on Christmas day", it would be far
+                    more meaningful celebration when everyone feel love in their hearts. And will
+                    double it up when we are able to share that unconditional love.
+                </p>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div><img src="jesus.jpg" alt="jesus"></div>
+                <p>Christmas means that unto us a child was born. A Savior for the world!
+                    The spiritual meaning of Christmas gives full reflection of what this
+                    glorious day is all about. It is about the incarnation of our Lord
+                    Jesus Christ to save all mankind from sins. Gloria to excelsis Deo!
+                </p>
+                <div>
+                    <p>
+                    </p>
+                </div>
+                <!-- end row-->
+        </main>
+        <footer class="row">
+            <div>
+                <h3> &copy; Rodita Conroy 2020 </h3>
+            </div>
+        </footer>
+</body>

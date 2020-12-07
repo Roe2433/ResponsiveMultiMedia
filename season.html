@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablet Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: none;
+        }
+
+        @media only screen {
+
+            /* For Tablet: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <h1>Season</h1>
+            <nav>
+                <div class="col-3" padding=5.5%><a href="index.html">Home</a> </div>
+                <div class="col-3"><a href="Tradition.html">Tradition</a> </div>
+                <div class="col-3"><a href="season.html">Season</a></div>
+                <div class="col-3" padding=5.5%><a href="meaning.html">Meaning</a></div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div><img src="moon-santa.png" alt="moon-santa"> </div>
+                <div>
+                    <p>Season of Saint Nicholas. Santa Claus comes on Christmas Eve with the
+                        reindeers in a sleigh, bringing gifts to all children all over the world.
+                        He goes down the chimney when everyone is asleep and put all the wrapped
+                        presents under the tree.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div><img src="children.jpg" alt="children"> </div>
+                <div>
+                    <p>Season of Giftgiving. Children get gifts of toys that they wish on their list.
+                        The joy in their eyes when they open the boxes wrapped from under the tree,
+                        gives us the warmth feeling of what Christmas is about - giving joy.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div><img src="christmas-cookies.jpg" alt="christmas-cookies"></div>
+                <div>
+                    <p>Season of Baked Cookies. The smell of freshly baked cookies fill the air during
+                        Christmas Season. There are different kinds of cookies baked before Christmas.
+                        We used them as gifts to families and friends</p>
+                </div>
+                <!-- end row-->
+        </main>
+        <footer class="row">
+            <div>
+                <h3> &copy; Rodita Conroy 2020 </h3>
+            </div>
+        </footer>
+</body>
